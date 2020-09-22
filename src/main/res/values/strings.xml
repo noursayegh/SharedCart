@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sharedCart3</string>
+    <string name="edit"><u>Edit Name</u></string>
+    <string name="delete"><u>Delete List</u></string>
+</resources>

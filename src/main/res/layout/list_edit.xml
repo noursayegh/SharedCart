@@ -1,0 +1,80 @@
+<?xml version="1.0"   encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:background="@color/colorBackground"
+
+    android:orientation="vertical"   >
+    <LinearLayout
+        android:gravity="right"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/x"
+            />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/save"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackground"
+                android:text="Save"
+                android:visibility="gone"/>
+            <Button
+                android:background="@color/colorBackground"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="> Edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/edit"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:background="@color/colorBackground"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="> Delete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/delete"
+                android:layout_below="@+id/category"/>
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

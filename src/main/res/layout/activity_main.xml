@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <ImageView
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        android:id="@+id/image"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout"
+        android:id="@+id/text"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:textSize="20dp"
+        android:text="LOGIN"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:id="@+id/input_email"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:id="@+id/input_password"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:layout_height="35dp"
+            android:layout_width="120dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/login"
+            app:layout_constraintTop_toBottomOf="@id/text"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="onlogin"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/signup"
+            app:layout_constraintTop_toBottomOf="@id/login"
+            android:textSize="13dp"
+            android:text="Click here to sign up."
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="onsignup"
+            android:paddingTop="20dp"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

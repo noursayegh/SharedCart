@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Lists">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/listlayout"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:gravity="center"
+        >
+    <Button
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        app:layout_constraintHorizontal_weight="50"
+        app:layout_constraintVertical_weight="20"
+        android:text="My Carts"
+        android:id="@+id/cart"
+        android:textAllCaps="false"
+        android:onClick="cart"/>
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            app:layout_constraintHorizontal_weight="50"
+            app:layout_constraintVertical_weight="20"
+            android:text="My Recipes"
+            android:id="@+id/recipe"
+            android:textAllCaps="false"
+            android:onClick="recipes"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_weight="50"
+            app:layout_constraintVertical_weight="20"
+            android:text="Show online Recipes"
+            android:id="@+id/allRecipes"
+           />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

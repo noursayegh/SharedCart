@@ -1,0 +1,54 @@
+<?xml version="1.0"   encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/popup_shape"
+
+    android:orientation="vertical"   >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:gravity="right"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/x"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:id="@+id/addItem"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:text="add item"
+        />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_rename"
+        app:showAsAction="ifRoom"
+        android:title="Rename"
+        />
+
+    <item
+        android:id="@+id/action_addItem"
+        app:showAsAction="ifRoom"
+        android:title="Add Item"
+        android:icon="@drawable/plus"
+        />
+
+    <item
+        android:id="@+id/action_logout"
+        app:showAsAction="ifRoom"
+        android:title="Log out"
+        />
+
+</menu>
